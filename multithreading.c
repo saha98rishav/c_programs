@@ -20,7 +20,9 @@ int main() {
 }
 
 void *computation(void *add) {
+    long sum = 0;
     long *add_num = (long *)(add);
-    printf("Add: %ld\n", *add_num);
+    for (long i = 0; i < 1000000000; i += 1)
+        sum += *add_num;
     return NULL;
 }
