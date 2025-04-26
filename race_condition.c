@@ -5,6 +5,8 @@
 /*
  * Race condition occurs when multiple threads
  * accesses a shared resource together
+ *
+ * Compile command: gcc race_condition.c bank.c
  */
 
 void *deposit(void *amount);
@@ -45,6 +47,6 @@ void *deposit(void *amount) {
 
     write_balance(account_balance);
     pthread_mutex_unlock(&mutex); // release Lock
-    
+
     return NULL;
 }
