@@ -40,13 +40,6 @@ int *read_file(char *filepath, int *arr_size, bool *status) {
     fclose(file);
     *arr_size = size;
     *status = true;
-    // // Print the array
-    // for (int i = 0; i < size; i += 1)
-    //     printf("%d\n", *(arr + i));
-
-    // printf("\nEnd\n");
-
-    // free(arr); // Free the allocated memory;
-
+    
     return arr;
 }
