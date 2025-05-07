@@ -7,7 +7,7 @@ int read_balance() {
     return balance;
 }
 
-int write_balance(int new_balance) {
+void write_balance(int new_balance) {
     usleep(250000);
     balance = new_balance;
 }
