@@ -92,7 +92,8 @@ int main(int argc, char *argv[]) {
         Task t = {
             .taskFunction = i%2==0 ? &sum : &prod,
             .arg1 = rand() % 100,
-            .arg2 = rand() % 100};
+            .arg2 = rand() % 100
+		};
         submitTask(t);
     }
 

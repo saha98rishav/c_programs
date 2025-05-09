@@ -17,7 +17,7 @@ typedef struct ThreadArgs {
 void *threadFunction(void *args) {
     ThreadArgs *threadArgs = (ThreadArgs *)args;
     printf("\nReceived arguements\n");
-    printf("Array memory location: %p\n", &threadArgs->arg1);
+    printf("Array memory location: %p\n", threadArgs->arg1);
     printf("Start searching at index: %d\n", threadArgs->arg2);
     printf("Stop searching at index: %d\n", threadArgs->arg3);
     printf("Number to search: %d\n", threadArgs->arg4);
