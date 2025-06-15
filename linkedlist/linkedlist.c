@@ -8,7 +8,7 @@ typedef struct Node {
     struct Node *next;
 } Node;
 
-typedef struct {
+typedef struct List {
     Node *head;
     Node *tail;
     int size;
@@ -35,7 +35,7 @@ int main() {
     }
 
     printf("Enter 5 numbers to insert into List at Begninning:\n");
-    
+
     for (int i = 0; i < 5; i += 1) {
         scanf("%d", &n);
         insertAtBeginning(list, n);
